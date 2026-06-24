@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { toast } from 'sonner'
 import axios from 'axios'
+import ResultsGallery from './components/ResultsGallery'
 
 const API = import.meta.env.VITE_API_URL || '/api'
 
@@ -370,6 +371,9 @@ export default function App() {
           </div>
         </div>
       </Section>
+
+      {/* Results Gallery */}
+      <ResultsGallery />
 
       {/* About */}
       <Section id="about" className="py-24 px-6">
